@@ -1,0 +1,13 @@
+/* make background dark grey */
+body {
+  background-color: #333;
+}
+
+#open-cta button{
+    background-color: transparent;
+    border-radius: none;
+}
+
+#open-cta{
+    background-color: transparent;
+}
