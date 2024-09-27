@@ -1,7 +1,7 @@
 const openBtn = document.querySelector('#open-cta');
-const form = document.querySelector('#form-container');
+const form = document.querySelector('#form-cta');
 
 openBtn.addEventListener('click', () => {
-    openBtn.style.display = 'none';
-    form.style.display = 'flex';
-})
+    openBtn.classList.add('d-none');
+    form.classList.remove('d-none');
+});

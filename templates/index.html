@@ -16,6 +16,8 @@
     <title>Villin Wraps</title>
   </head>
   <body>
+
+    <!-- Logo -->
     <div
       class="position-absolute top-50 start-50 translate-middle"
       id="open-cta"
@@ -31,40 +33,97 @@
     </div>
 
     <div
-      class="position-absolute top-50 start-50 translate-middle items-center"
-      id="form-container"
+      class="container d-none justify-content-center align-items-center vh-100"
+      id="form-cta"
     >
-      <form>
-        <!-- field for firstname email phonenumber  -->
+      <form> 
+        <!-- First and Last name -->
         <div class="row">
-            <div class="mb-3 col-9">
-              <label for="firstname" class="form-label ">First Name</label>
+          <div class="col-6">
+            <label for="first-name" class="form-label">First Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="first-name"
+              name="first-name"
+              required
+            />
+          </div>
+          <div class="col-6">
+            <label for="last-name" class="form-label">Last Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="last-name"
+              name="last-name"
+              required
+            />
+          </div>
+        </div>
+        <!-- Email  -->
+        <div class="row">
+          <div class="col-12">
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              required
+            />
+          </div>
+        </div>
+        <!-- Phone and Service -->
+        <div class="row">
+          <div class="mb-3 col-6">
+            <label for="phone" class="form-label">Phone</label>
+            <input
+              type="tel"
+              class="form-control"
+              id="phone"
+              name="phone"
+              placeholder="123-456-7890"
+              required
+            />
+          </div>
+          <div class="mb-3 col-6">
+            <label for="service" class="form-label">Service</label>
+            <select class="form-select" id="service" name="service" required>
+              <option value="" selected disabled>Select a service</option>
+              <option value="wrap">Wrap</option>
+              <option value="tint">Tint</option>
+              <option value="ppf">PPF</option>
+            </select>
+          </div>
+        </div>
+        <!-- Vehicle Info -->
+          <div class="row">
+            <div class="mb-3 col-2">
+              <label for="year" class="form-label">Year</label>
               <input
                 type="text"
                 class="form-control"
-                id="firstname"
-                aria-describedby="firstname"
-              />
-            </div>
-            <div class="mb-3 col-6">
-              <label for="email" class="form-label">Email address</label>
-              <input
-                type="email"
-                class="form-control"
-                id="email"
-                aria-describedby="email"
+                id="year"
+                name="year"
+                required
               />
             </div>
             <div class="mb-3 col-4">
-              <label for="phonenumber" class="form-label">Phone Number</label>
-              <input
-                type="tel"
-                class="form-control"
-                id="phonenumber"
-                aria-describedby="phonenumber"
-              />
+              <label for="make" class="form-label">Make</label>
+              <select class="form-select" id="make" name="make" required>
+                <option value="" disabled selected>Select Make</option>
+              </select>
+            </div>
+            <div class="mb-3 col-4">
+              <label for="model" class="form-label">Model</label>
+              <select class="form-select" id="model" name="model" required>
+                <option value="" disabled selected>Select Model</option>
+              </select>
+            </div>
           </div>
-        </div>
+
+        <!-- submit button -->
+        <button type="submit" class="btn btn-primary">Submit</button>
       </form>
     </div>
 

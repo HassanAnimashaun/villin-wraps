@@ -9,7 +9,10 @@ body {
   z-index: 1;
 }
 
-#form-container{
-  display: none;
+#form-cta{
+  display: flex;
   color: white;
+  max-width: 100% !important;
 }
+
+
