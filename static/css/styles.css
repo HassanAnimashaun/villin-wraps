@@ -6,4 +6,10 @@ body {
 #open-cta button {
   background-color: transparent;
   border: none;
+  z-index: 1;
+}
+
+#form-container{
+  display: none;
+  color: white;
 }
